@@ -86,4 +86,6 @@ sudo install crc-linux-2.10.1-amd64/crc /usr/local/bin/crc
 # and run
 crc setup
 crc start
+# or
+crc start --cpus 16 --memory 43008 --disk-size 124
 ```
