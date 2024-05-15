@@ -80,7 +80,7 @@ Example (latest):
 curl -LO https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz
 tar -xvf crc-linux-amd64.tar.xz
 
-sudo install crc-linux-2.10.1-amd64/crc /usr/local/bin/crc
+sudo install "$(find . -type d -name 'crc-linux-*' -print -quit)/crc" /usr/local/bin/crc
 
 # Get pull request from https://console.redhat.com/openshift/create/local
 # and run
