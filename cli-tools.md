@@ -88,5 +88,5 @@ sudo install "$CRC_VERSION/crc" /usr/local/bin/crc
 crc setup
 crc start
 # or
-crc start --cpus 16 --memory 43008 --disk-size 124
+crc start --cpus 16 --memory 43008 --disk-size 124 --pull-secret-file ./pull-secret.txt
 ```
