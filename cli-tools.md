@@ -46,7 +46,7 @@ Installation/Documentation: https://kubevirt.io/user-guide/operations/virtctl_cl
 
 Example (v0.58.0):
 ``` bash
-export VERSION=v0.58.0
+export VERSION=$(curl https://storage.googleapis.com/kubevirt-prow/release/kubevirt/kubevirt/stable.txt)
 curl -LO https://github.com/kubevirt/kubevirt/releases/download/${VERSION}/virtctl-${VERSION}-linux-amd64
 sudo install virtctl-${VERSION}-linux-amd64 /usr/local/bin/virtctl
 ```
